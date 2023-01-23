@@ -34,3 +34,21 @@
 .navbar .nav-link {
   color: #fff !important;
 }
+/* button */
+.carousel-inner .btn {
+  border-radius: 3px;
+  background: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+.carousel-inner .btn:hover {
+  background-position: left bottom;
+}
+.carousel-inner a {
+  text-align: center;
+  transition: all .6s ease-out;
+}
+.carousel-inner a:hover {
+  color: black;  
+}

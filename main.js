@@ -10,16 +10,17 @@ const getData = async () =>{
 };
 const createBanner = (bannerPic)=>{
     let bannerData = [...bannerPic];
-    console.log(bannerData);
-    console.log(bannerData[0].image);
-    console.log(bannerData[1].image);
-    console.log(bannerData[2].image);
     const carouselItem1 = document.querySelector(".one")
     const carouselItem2 = document.querySelector(".two")
     const carouselItem3 = document.querySelector(".three")
     carouselItem1.style.backgroundImage = `url('${bannerData[0].image}')` 
     carouselItem2.style.backgroundImage = `url('${bannerData[1].image}')` 
     carouselItem3.style.backgroundImage = `url('${bannerData[2].image}')` 
-    console.log(`url('${bannerData[1].image}')`);
+    const carouselItem1Name = document.querySelector(".name1")
+    const carouselItem2Name = document.querySelector(".name2")
+    const carouselItem3Name = document.querySelector(".name3")
+    carouselItem1Name.textContent = bannerData[0].title
+    carouselItem2Name.textContent = bannerData[1].title
+    carouselItem3Name.textContent = bannerData[2].title
 };
 getData();
